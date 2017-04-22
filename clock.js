@@ -71,16 +71,17 @@ function drawClock() {
     var savage = document.getElementById('savage');
     ctx.drawImage(knife, 0, 0, 200, 200);
     ctx.drawImage(knife, 100, 0, 200, 200);
-    ctx.drawImage(issa, 500, 0);
+    
     ctx.drawImage(knife, ctx.canvas.width - 200, 0, 200, 200);
     ctx.drawImage(knife, ctx.canvas.width - 300, 0, 200, 200);
-    ctx.drawImage(issa, 500, 0);
+    ctx.drawImage(issa, centerWidth - 125, 0);
+    
     ctx.drawImage(savage, centerWidth - 230, centerHeight - 200);
     ctx.stroke();
 
     ctx.fillStyle = '#e9b53e';
     ctx.font = '24pt Times New Roman';
-    ctx.fillText('clock', 650, 70)
+    ctx.fillText('clock', centerWidth + 25, 70)
     ctx.fillStyle = 'white';
     ctx.font = '24pt Times New Roman';
     ctx.fillText('21', centerWidth - 10, centerHeight - (secondHandRadius - 20))
